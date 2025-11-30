@@ -3,6 +3,7 @@ import Container from './components/Container/Container';
 import CryptoHistory from './components/CryptoHistory/CryptoHistory';
 import ForbesList from './components/ForbesList/ForbesList';
 import Heading from './components/Heading/Heading';
+import HeadingChildren from './components/HeadingChildren/HeadingChildren';
 import Section from './components/Section/Section';
 import Statistics from './components/Statistics/Statistics';
 
@@ -21,6 +22,10 @@ export const App = () => {
 
         <Heading title="Task 4 Crypto history" top bottom />
         <CryptoHistory />
+
+        <HeadingChildren tag="h1" bottom>
+          Heading with Children
+        </HeadingChildren>
       </Container>
     </Section>
   );
