@@ -8,9 +8,9 @@ import Section from './components/Section/Section';
 import Statistics from './components/Statistics/Statistics';
 
 import article from './data/article.json';
+// import stats from 'data/stats.json';
 
 export const App = () => {
-  console.log('article', article);
   return (
     <Section>
       <Container>

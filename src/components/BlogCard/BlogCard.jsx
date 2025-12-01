@@ -1,5 +1,5 @@
 import styles from './BlogCard.module.css';
-import { formatDistance, subDays } from 'date-fns';
+import { formatDate } from '../../helpers/formatDate';
 
 const BlogCard = ({
   poster,
@@ -26,11 +26,7 @@ const BlogCard = ({
             <img className={styles.avatar} src={avatar} alt={userName} />
             <div>
               <h3 className={styles.userName}>{userName}</h3>
-              <small className={styles.date}>
-                {formatDistance(subDays(postedAt, 3), new Date(), {
-                  addSuffix: true,
-                })}
-              </small>
+              <small className={styles.date}>{formatDate(postedAt)}</small>
             </div>
           </div>
         </div>
