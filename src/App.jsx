@@ -8,7 +8,7 @@ import Section from './components/Section/Section';
 import Statistics from './components/Statistics/Statistics';
 
 import article from './data/article.json';
-// import stats from 'data/stats.json';
+import statsData from './data/stats.json';
 
 export const App = () => {
   return (
@@ -26,7 +26,7 @@ export const App = () => {
         />
         ;
         <Heading title="Task 2 Statistics" top bottom />
-        <Statistics title="Main Statistics" />
+        <Statistics title="Main Statistics" stats={statsData} />
         <Heading title="Task 3 Forbes list" top bottom />
         <ForbesList />
         <Heading title="Task 4 Crypto history" top bottom />
